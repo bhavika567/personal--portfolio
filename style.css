@@ -1,0 +1,725 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo-circle {
+    background-color: #2c7fb8; /* Dark blue */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 25px;
+    margin-top: 5px;
+
+  }
+  
+  /* Text Inside Circle */
+  .circle-text {
+    position: relative;
+    z-index: 2; /* Ensure "P" stays on top of the circle */
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size: 26px;
+    
+  }
+  
+  /* Text Next to Circle */
+  .logo-text {
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: -10px; /* Pull the text left to overlap the circle */
+    white-space: nowrap; /* Prevent wrapping to the next line */
+    position: relative;
+    z-index: 1; /* Ensure the circle overlaps the "U" */
+   color:black;
+   /* font-family: "Poppins", serif; */
+  font-weight: 700;
+  font-style: normal;
+  color:white;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  }
+  .container{
+    width:1140px;
+    padding-left:25px;
+    padding-right:25px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* display: flex; */
+
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 10px; /* Adjust row gap */
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap:30px;
+}
+header{
+  padding: 0px 10px;
+  background-color:black; 
+  height:10vh;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+}
+.list span{
+  padding-right: 10px;
+}
+.list li{
+  font-family: "Poppins", serif;
+  font-size: 18px;
+  margin-right: 25px;
+  margin-top: 15px;
+}
+.list li a:hover{
+  color:#2c7fb8;
+}
+.list li a{
+  text-decoration: none;
+  color:white;
+}
+.list li a.active{
+  color:#2c7fb8;
+
+}
+.home-section{
+  display: flex;
+  justify-content: space-between;
+
+}
+#home{
+  background-color:white;
+  height:90vh;
+  padding-top: 120px;
+}
+.home-txt{
+  flex:1;
+  position: relative;
+}
+.home-txt h2{
+  /* font-size: 35px; */
+  margin-top: 45px;
+  font-family: "Poppins", serif;
+font-style: normal;
+font-size: 2.5em;
+/* margin-left: 50px; */
+}
+.home-txt p{
+  font-family: "Poppins", serif;
+font-style: normal;
+font-size: 2.5em;
+font-weight: bold;
+/* margin-left: 50px; */
+}
+#element{
+  color:#2c7fb8;;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Poppins", serif;
+  font-style: normal;
+}
+.wave{
+  display: inline-block;
+  animation: wave 1.5s infinite;
+}
+/* .hand:focus {
+ outline: none;
+ box-shadow: none;
+ outline: 1px solid white;
+} */
+@keyframes wave{
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.button-container{
+  text-align: left;
+  margin-left: 45px;
+}
+.download-btn{
+  display: inline-block;
+  background-color:#2c7fb8;
+  color:white;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-top: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Poppins", serif;
+  font-style: normal;
+
+}
+.blueviolet{
+  font-size: 55px;
+  color:#2c7fb8;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Poppins", serif;
+  font-style: normal;
+}
+.blue{
+  color:#2c7fb8;
+}
+
+.home-img{
+padding-right: 50px;
+
+}
+.home-img img{
+  border-radius: 50%;
+  height:400px;
+  width: 400px;
+  object-fit: cover;
+  position: relative;
+  box-shadow: 0 0 15px 15px #94bfdb ;
+  margin: 0;
+  display: block;
+}
+.bb{
+  display: flex;
+  justify-content: space-between;
+}
+#About{
+  height:85vh;
+  padding-top: 60px;
+  background-color: white;
+}
+.heading1{
+  font-family: "Poppins", serif;
+  font-size: 30px;
+  text-align: center;
+ text-decoration: underline;
+}
+.text-section{
+  margin-top: 10px;
+}
+.text-section p{
+  font-size: 16px;
+  font-family: "Poppins", serif;
+}
+.list1{
+  margin-top: 20px;
+  font-family: "Poppins", serif;
+  line-height: 30px;
+}
+.row.b {
+  display: flex;  /* Use Flexbox to align the sections horizontally */
+  justify-content: space-between; /* Space between the sections */
+  align-items: flex-start;  /* Align both sections at the top */
+}
+
+.timeline {
+  flex: 1;  /* Takes up equal space */
+  
+  
+}
+
+.about-text {
+  flex: 1;  /* Takes up equal space */
+  /* max-width: 600px;  Limit the width of the text section */
+  
+}
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+ 
+}
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  position: relative;
+}
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background: #2c7fb8;
+  border-radius: 50%;
+  /* flex-shrink: 0; */
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px #2c7fb8;
+}
+.timeline-txt {
+  background: #f9f9f9;
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 30px;
+  line-height: 25px;
+  position: relative;
+  font-family: "Poppins", serif;
+}
+
+.timeline-txt::before {
+  content: '';
+  width: 3px;
+  height: 100%;
+  background: #2c7fb8;
+  position: absolute;
+  left: -15px;
+  top: 0;
+}
+.about-text p{
+  font-family: "Poppins", serif;
+  margin-top: 40px;
+}
+.row.ss {
+  display: flex;  /* Using flexbox to align sections */
+  justify-content: space-between; /* Space between text and progress bar */
+  align-items: flex-start;  /* Align items at the top */
+}
+.heading2{
+  text-align: center;
+  font-size: 20px;
+  font-family: "Poppins", serif;
+}
+.progress-section {
+  width: 100%;
+}
+.skill {
+  margin-bottom: 20px;
+}
+#Skills{
+  padding-top: 60px;
+  height:90vh;
+  background-color: white;
+}
+.text-section {
+  flex: 1;  /* Take up equal space */
+  padding-right: 20px;/* Add some space between the text and progress section */
+  margin-top: 30px;
+}
+
+.progress-section {
+  flex: 1; /* Take up equal space */
+  padding-left: 20px; /* Add space between the progress bar and text */
+  margin-top: 30px;
+}
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  height: 20px;
+  border-radius: 10px;
+  margin: 3px 0;
+  overflow: hidden;
+}
+.skill span{
+  font-family: "Poppins", serif;
+  font-weight: bold;
+}
+.progress {
+  height: 100%;
+  width: 0%;  /* Initial width of the progress bar is 0% */
+  background-color:#2c7fb8;
+  border-radius: 10px;
+  transition: width 2s ease-out; /* Smooth transition */
+}
+#Projects{
+padding-top: 60px;
+height:90vh;
+background-color: white;
+}
+/* Portfolio container */
+/* .portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+} */
+.portfolio {
+  display: flex;
+  justify-content: center; /* Centers the boxes */
+  gap: 50px; /* Reduce spacing between boxes */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  width: 100%; /* Makes sure the container spans full width */
+  margin-top: 40px;
+}
+
+/* Project box */
+.boxe {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.boxe:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px #2c7fb8;
+}
+
+/* Project image */
+.boxe img {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #2c7fb8;
+}
+
+/* Project title */
+.boxe h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Project description */
+.boxe p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  font-family: "Poppins", serif;
+}
+.boxe p {
+  padding: 0 15px; /* Adds space on left and right */
+  text-align: justify; /* Optional: Aligns text properly */
+}
+.boxe p strong {
+  display: inline; /* Ensures no extra space is added */
+  margin-right: 5px; /* Adjust spacing between bold text and technologies */
+}
+
+.boxe p {
+  text-align: justify;
+  padding: 0 15px; /* Adjusts left and right spacing */
+  margin-bottom: 0; /* Removes extra bottom margin */
+}
+
+.technologies {
+  padding: 0 15px;
+  text-align: center; /* Adjust alignment if necessary */
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.button {
+  justify-content: center; /* Centers horizontally */
+  display: flex;
+}
+
+.live {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: 0;
+  background: #2c7fb8;
+  color: white !important;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Poppins", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+
+}
+
+/* Button hover effect */
+.live:hover {
+  background: #666;
+}
+
+
+/* #Skills{
+  height:80vh;
+  padding-top: 40px;
+  background-color: black;
+  margin-top: 40px;
+  color:#fff;
+}
+.progress-section {
+  width: 50%;
+}
+
+.skill {
+  margin-bottom: 15px;
+  color:#fff
+}
+
+.skill span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: "Poppins", serif;
+
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 5px;
+  height: 20px;
+  overflow: hidden;
+  width:100%;
+}
+
+.progress {
+  height: 100%;
+  width:0%;
+  background: #2c7fb8;
+  border-radius: 5px;
+  transition: width 0.5s;
+  transition: width 2s ease-out; /* Smooth transition */
+ */
+
+  /* .progress-bar2 {
+    background: #e0e0e0;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+  }
+  
+  .progress2 {
+    height: 100%;
+    background: #2c7fb8;
+    border-radius: 5px;
+    transition: width 0.5s;
+  }
+
+    .progress-bar3 {
+      background: #e0e0e0;
+      border-radius: 5px;
+      height: 20px;
+      overflow: hidden;
+    }
+    
+    .progress3 {
+      height: 100%;
+      background: #2c7fb8;
+      border-radius: 5px;
+      transition: width 0.5s;
+    }
+    .progress-bar4 {
+      background: #e0e0e0;
+      border-radius: 5px;
+      height: 20px;
+      overflow: hidden;
+    }
+    
+    .progress4 {
+      height: 100%;
+      background: #2c7fb8;
+      border-radius: 5px;
+      transition: width 0.5s;
+    }
+    .progress-bar5 {
+      background: #e0e0e0;
+      border-radius: 5px;
+      height: 20px;
+      overflow: hidden;
+    }
+    
+    .progress5 {
+      height: 100%;
+      background: #2c7fb8;
+      border-radius: 5px;
+      transition: width 0.5s;
+    }
+    .progress-bar6 {
+      background: #e0e0e0;
+      border-radius: 5px;
+      height: 20px;
+      overflow: hidden;
+    }
+    
+    .progress6 {
+      height: 100%;
+      background: #2c7fb8;
+      border-radius: 5px;
+      transition: width 0.5s;
+    } */
+  /* animation: progressAnimation 5s linear forwards; */
+
+/* @keyframes progressAnimation{
+  0%{
+    width:0%;
+  }
+  100%{
+    width:100%;
+  }
+} */
+ form{
+   display: flex;
+   flex-direction: column;
+   padding: 2vw 4vw;
+   width:50%;
+   max-width: 600px;
+   border-radius: 10px;
+   margin: auto;
+ }
+ form h3{
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+ }
+ /* form input{
+    height:3vh;
+    padding: 20px;
+    outline: none ;
+ } */
+  /* form input{
+ height: 3vh;
+ width: 400px;
+ border-radius: 10px;
+ margin-top: 30px;
+ margin-left: 30px;
+ padding: 10px 10px 10px 30px;
+ font-size:16px;
+  }
+form textarea{
+    height: 12vh;
+    width: 400px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 10px 10px 10px 30px;
+    font-size:16px;
+}
+ form button{
+   padding: 5px;
+   background-color: #2c7fb8;
+   color:#fff;
+   font-size: 18px;
+   border: 0;
+   cursor: pointer;
+   height: 6vh;
+   width:20%;
+   margin: auto;
+   margin: 25px auto 0;
+   border-radius: 30px;
+ } */
+
+ /* .field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none
+} */
+
+#Contact {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color:#2c7fb8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#2c7fb8;
+}
+
+#status-message {
+  text-align: center;
+  margin-top: 10px;
+  color:#2c7fb8;;
+}
