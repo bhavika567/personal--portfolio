@@ -723,3 +723,29 @@ button:hover {
   margin-top: 10px;
   color:#2c7fb8;;
 }
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    header {
+        min-height: 60px;
+        padding: 10px;
+    }
+    #home {
+        min-height: auto;
+        padding: 50px 20px;
+    }
+    .home-txt h2, .home-txt p {
+        font-size: 1.5em;
+    }
+    .home-img img {
+        width: 250px;
+        height: 250px;
+    }
+    .list {
+        gap: 10px;
+    }
+    .grid-container {
+        row-gap: 5px;
+    }
+}
